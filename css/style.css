@@ -1,0 +1,147 @@
+/*************************************************************-->
+<!--__ *********************************_**********************->                      
+/  __ \                                | |                     
+| /  \/ __ _ _ __ _ __   ___   ___ __ _| |_   _ _ __  ___  ___ 
+| |    / _` | '__| '_ \ / _ \ / __/ _` | | | | | '_ \/ __|/ _ \
+| \__/\ (_| | |  | |_) | (_) | (_| (_| | | |_| | |_) \__ \  __/
+ \____/\__,_|_|  | .__/ \___/ \___\__,_|_|\__, | .__/|___/\___|
+                 | |                       __/ | |             
+<--              |_|   By Rolls 2020      |___/|_|             -->
+<!--******************* VERSION 0.1 ***************************-->
+<!--**********************************************************-->*/
+
+/* Cargando fuentes */
+
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P|Share+Tech&display=swap");
+
+/* FUENTES */
+/*
+font-family: 'Share Tech', sans-serif;
+font-family: 'Press Start 2P', cursive;
+/*
+
+
+/*************************************/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-color: black;
+  transition: 3s;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+}
+
+#todo {
+  background-color: black;
+  color: white;
+  transition: 3s;
+}
+
+.turbo .nitro1,
+.nitro2,
+.nitro3 {
+  display: block;
+  background-color: red;
+  width: 20%;
+  height: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 3px solid black;
+  opacity: 100%;
+  transition: 2s;
+}
+
+.monza {
+  width: 900px;
+  position: relative;
+  margin: 0 auto;
+  background-image: url(../img/road.jpg);
+}
+
+.monza .carril {
+  height: 100px;
+  width: 100%;
+  padding: 25px 0px;
+  border-bottom: 2px dotted white;
+}
+
+.monza .carril .coche {
+  width: 100px;
+  height: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.monza .carril #coche1 {
+  background-image: url(../img/coche1.png);
+  filter: drop-shadow(5px 5px 10px black);
+}
+
+.monza .carril #coche2 {
+  background-image: url(../img/coche2.png);
+  filter: drop-shadow(5px 5px 10px black);
+}
+
+.monza .carril #coche3 {
+  background-image: url(../img/coche3.png);
+  filter: drop-shadow(5px 5px 10px black);
+}
+
+.monza .carril #coche1 .fuego {
+  background-image: url(../img/fire.gif);
+  width: 300px;
+  height: 556px;
+  transform: translate(2070px, -1000px);
+  rotate: -90deg;
+  opacity: 0;
+  transition: 1s;
+  filter: none;
+  scale: 20%;
+  background-blend-mode: overlay;
+}
+
+.monza .carril #coche1 .humo {
+  background-image: url(../img/smoke.gif);
+  width: 200px;
+  height: 150px;
+  transform: translate(60px, -170px);
+  rotate: -90deg;
+  opacity: 0;
+  transition: 1s;
+  filter: none;
+  scale: 100%;
+  background-blend-mode: overlay;
+}
+
+.meta {
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  width: 300px;
+  position: absolute;
+  background-image: url(../img/meta.jpg);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  right: 0px;
+  top: 140px;
+  transform: rotateZ(90deg);
+  filter: drop-shadow(5px 5px 10px black);
+}
+
+#mensaje {
+  text-align: center;
+}
